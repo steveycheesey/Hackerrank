@@ -10,6 +10,7 @@ int hourglassSum(vector<vector<int>> arr) {
     {
         for(int c = 0; c <= 3; ++c)
         {
+        // adds the array values that create an hourglass shape
             int sum = arr[r][c] + arr[r][c+1] + arr[r][c+2] + arr[r+1][c+1] + arr[r+2][c] + arr[r+2][c+1] + arr[r+2][c+2];
 
             result = max(result, sum);
